@@ -1,0 +1,35 @@
+
+body{
+  color: white;
+  background-color: #30363D;
+
+}
+
+
+.container-suma{
+ display: flex;
+ justify-content: center;
+  font-size: 30px;
+  color: white;
+
+ 
+  
+}
+
+.container-all{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button{
+  background-color: #30363D;
+  color: white;
+  height: 3rem;
+  width: 7rem;
+}
+
+button:hover{
+  background-color: #5d6267;
+}
