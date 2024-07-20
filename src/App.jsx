@@ -1,16 +1,15 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import './App.css'
-import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './App.css';
-import Home from  '.';
-import ClickCounter from  '.';
-import Timer from  '.';
-import UserActive from  '.';
-import DigitalClock from '.';
+
+import Home from "./assets/Components/Home/Home";
+import ClickCounter from "./assets/Components/ClickCounter/ClickCounter";
+import Timer from "./assets/Components/Timer/Timer";
+import UserActive from "./assets/Components/Login/Login";
+import DigitalClock from "./assets/Components/DigitalClock/DigitalClock";
+import "./assets/Styles/styles.css";
 
 
-   
 const App = () => {
   return (
     <Router>
@@ -24,9 +23,9 @@ const App = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/counter" element={<Counter />} />
+          <Route path="/clickcounter" element={<ClickCounter/>} />
           <Route path="/timer" element={<Timer />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/useractive" element={<UserActive />} />
           <Route path="/clock" element={<DigitalClock />} />
         </Routes>
       </div>
