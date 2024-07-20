@@ -1,13 +1,10 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Link } from 'react-router-dom'
-import './App.css';
-
 import Home from "./assets/Components/Home/Home";
 import ClickCounter from "./assets/Components/ClickCounter/ClickCounter";
 import Timer from "./assets/Components/Timer/Timer";
-import UserActive from "./assets/Components/Login/Login";
+import UserActive from "./assets/Components/UserActive/UsesrActive";
 import DigitalClock from "./assets/Components/DigitalClock/DigitalClock";
-import "./assets/Styles/styles.css";
+import "./assets/Styles/Styles.css";
 
 
 const App = () => {
@@ -15,14 +12,12 @@ const App = () => {
     <Router>
       <div>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/counter">Contador</Link>{" "}
+          <Link to="/ClickCounter">Click</Link>{" "}
           <Link to="/timer">Cronometro</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/clock">Reloj</Link>
+          <Link to="/UserActive">User Active</Link>
+          <Link to="/clock">Reloj Digital</Link>
         </nav>
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/clickcounter" element={<ClickCounter/>} />
           <Route path="/timer" element={<Timer />} />
           <Route path="/useractive" element={<UserActive />} />

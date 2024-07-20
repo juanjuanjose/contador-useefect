@@ -6,7 +6,9 @@ const Counter = () => {
     setCount(count + 1);
     };
 
-
+    useEffect(() => {
+    document.title = `Número de clics: ${count}`;
+    }, [count]);
 
     return (
         <>
