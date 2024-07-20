@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./assets/Components/Home/Home";
 import ClickCounter from "./assets/Components/ClickCounter/ClickCounter";
 import Timer from "./assets/Components/Timer/Timer";
 import UserActive from "./assets/Components/UserActive/UsesrActive";
